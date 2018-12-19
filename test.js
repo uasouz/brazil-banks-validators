@@ -1,4 +1,4 @@
-const { Bank } = require("./index")
+const { Bank,validateBank,validateBankPromise } = require("./index")
 
 const banco = new Bank(
     237,
@@ -10,12 +10,11 @@ const banco = new Bank(
 
 console.log(banco)
 
-const bancoFalha = new Bank(
-    237,
-    3726,
-    null,
-    "0127037",
-    7
-)
+console.log(validateBank(237,3726,null,"0127039",7))
 
-console.log(bancoFalha)
+validateBankPromise(237,3726,null,"0127039",7,0,"",true).then((result)=>{
+    console.log(result)
+}).catch((error)=>{
+    console.log(error)
+})
+

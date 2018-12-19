@@ -6,7 +6,7 @@ const validators = {}
 
 fs.readdirSync(__dirname)
 	.filter(function (file) {
-		return (file.indexOf(".") !== 0) && (file !== "index.js")
+		return (file.indexOf(".") !== 0) && (file !== "index.js" && file !== "README.md")
 	})
 	.forEach(function (file) {
 		const validator = require(path.join(__dirname, file))
@@ -18,8 +18,6 @@ Object.keys(validators).forEach(function (validatorName) {
 		validators[validatorName].associate(validators)
 	}
 })
-
-// module.exports = validators
 
 const bankValidatorsSwitch = SWC.switchcaseFWithParams({
 	104: validators.CaixaValidator().calculate,
