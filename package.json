@@ -1,0 +1,26 @@
+{
+  "name": "brazil-banks-validators",
+  "version": "0.0.1",
+  "description": "Classe de 'Banco'(Agencia e conta) com validação de dígito para as principais agencias",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uasouz/brazil-banks-validators.git"
+  },
+  "keywords": [
+    "banks",
+    "banco",
+    "conta",
+    "agencia",
+    "validar"
+  ],
+  "author": "Vinícius Lopes coop com Lucas Moraes e Igor Guerra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uasouz/brazil-banks-validators/issues"
+  },
+  "homepage": "https://github.com/uasouz/brazil-banks-validators#readme"
+}
