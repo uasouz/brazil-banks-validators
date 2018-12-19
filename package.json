@@ -4,7 +4,7 @@
   "description": "Classe de 'Banco'(Agencia e conta) com validação de dígito para as principais agencias",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test/test.js"
   },
   "repository": {
     "type": "git",
