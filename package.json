@@ -1,6 +1,6 @@
 {
   "name": "brazil-banks-validators",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Classe de 'Banco'(Agencia e conta) com validação de dígito para as principais agencias",
   "main": "index.js",
   "scripts": {
